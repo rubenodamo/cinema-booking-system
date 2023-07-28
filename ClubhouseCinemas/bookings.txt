@@ -1,0 +1,15 @@
+booked;Tony;Stark;Avengers;06/01/2022;17:00;C4, C5, B1, B2;Yes;CLUBH1809
+booked;Steve;Rogers;Avengers;08/01/2022;13:00;C4, C5;Yes;CLUBH6361
+booked;Natasha;Romanoff;Avengers;08/01/2022;17:00;B4, B5;Yes;CLUBH5290
+cancelled;Bruce;Banner;Avengers;09/01/2022;17:00;B2, B3, B4;Yes;CLUBH6741
+booked;Bruce;Wayne;Joker;14/01/2022;19:00;A1, A2, B3;Yes;CLUBH5600
+booked;Barry;Allen;Joker;18/01/2022;19:00;B3, B4;Yes;CLUBH5273
+booked;Ruben;Odamo;Coco;21/01/2022;16:00;A1, A2, A3, A4, A5, A6;Yes;CLUBH2395
+booked;Ruben;Odamo;Black Widow;28/01/2022;22:00;C1, C2, C3, C4, C5;Yes;CLUBH8637
+booked;Ruben;Odamo;Coco;25/01/2022;16:00;B4, B5, B6, B7;Yes;CLUBH1705
+booked;Ruben;Odamo;Toy Story;28/07/2023;13:00;B4, B5, B6;No;CLUBH8489
+booked;Ruben;Odamo;Toy Story;28/07/2023;17:00;B5, B6, B7;No;CLUBH8491
+booked;Ruben;Odamo;Toy Story;28/07/2023;13:00;B2;No;CLUBH654
+booked;Ruben;Odamo;Toy Story;28/07/2023;17:00;B4, B5;Yes;CLUBH2266
+booked;Ruben;Odamo;Toy Story;28/07/2023;13:00;B4, B5;No;CLUBH8787
+booked;Tanaya;Patel;Coco;28/07/2023;17:00;C5, C6;Yes;CLUBH1058

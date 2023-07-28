@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Login">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="406.0" fitWidth="344.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/ClubhouseCinema%20Logo.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#edf0f4" height="369.0" layoutX="12.0" layoutY="16.0" stroke="#edf0f4" strokeType="INSIDE" width="232.0" />
+            <Label layoutX="24.0" layoutY="27.0" text="Login" textFill="#3b4754">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="113.0" text="Email Address:" textFill="#3b4754">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="184.0" text="Password:" textFill="#3b4754">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="58.0" prefHeight="39.0" prefWidth="213.0" text="Sign into your exculsive Clubhouse Cinemas account to continue!" textFill="#798da3" wrapText="true">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="email" layoutX="21.0" layoutY="144.0" prefHeight="25.0" prefWidth="203.0" promptText="example@email.com">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="12.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="password" layoutX="21.0" layoutY="215.0" prefHeight="25.0" prefWidth="203.0" promptText="Enter password">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="12.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="loginBtn" layoutX="80.0" layoutY="265.0" mnemonicParsing="false" onAction="#userLogin" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #29323d;" text="LOG IN" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="37.0" fitWidth="36.0" layoutX="105.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/Mickey%20icon.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="25.0" layoutY="352.0" prefHeight="24.0" prefWidth="143.0" text="Don't have an account?" textFill="#798da3" wrapText="true">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="12.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="regLink" layoutX="154.0" layoutY="352.0" onAction="#goToReg" text="Sign up here" underline="true" wrapText="true">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="12.0" />
+               </font>
+            </Hyperlink>
+            <Label fx:id="invalidEntry" layoutX="22.0" layoutY="243.0" prefHeight="17.0" prefWidth="201.0" textFill="CRIMSON" wrapText="true">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

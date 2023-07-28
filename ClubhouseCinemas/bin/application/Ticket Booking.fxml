@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="805.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TicketBooking">
+   <top>
+      <AnchorPane prefHeight="47.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#edf0f4" height="52.0" stroke="#edf0f4" strokeType="INSIDE" width="805.0" />
+            <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="6.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/Mickey%20icon.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="241.0" layoutX="52.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/ClubhouseCinemas.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="backBtn" layoutX="688.0" layoutY="8.0" mnemonicParsing="false" onAction="#goBack" prefHeight="36.0" prefWidth="69.0" style="-fx-background-color: #edf0f4;" text="Back" textFill="#29323d">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="homeBtn" layoutX="758.0" layoutY="6.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goHome" prefHeight="39.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" textFill="#29323d">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/homeicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane prefHeight="424.0" prefWidth="385.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#edf0f4" height="405.0" layoutX="-2.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="390.0" />
+            <ImageView fx:id="selectedFilmPoster" fitHeight="179.0" fitWidth="125.0" layoutX="143.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/defaultFilmPoster.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="selectedFilmTitle" fill="#3b4754" layoutX="14.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Film Name" wrappingWidth="217.91453170776367">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="30.0" />
+               </font>
+            </Text>
+            <Button fx:id="seatsBtn" layoutX="142.0" layoutY="361.0" mnemonicParsing="false" onAction="#goSelectSeats" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: #29323D;" text="SELECT SEATS" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="12.0" />
+               </font>
+            </Button>
+            <Text fill="#3b4754" layoutX="46.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Date:" wrappingWidth="98.58115768432617">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="46.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Time:" wrappingWidth="98.58115768432617">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="82.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Screen:" wrappingWidth="62.5811882019043">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="16.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="selectedDate" layoutX="155.0" layoutY="251.0" prefHeight="25.0" prefWidth="185.0" promptText="dd/MM/yyyy" />
+            <ComboBox fx:id="filmTimes" editable="true" layoutX="155.0" layoutY="283.0" prefHeight="25.0" prefWidth="185.0" promptText="HH:mm" />
+            <TextField fx:id="screen" editable="false" layoutX="155.0" layoutY="316.0" prefHeight="25.0" prefWidth="185.0">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="405.0" prefWidth="423.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="7.0" layoutY="6.0" prefHeight="47.0" prefWidth="219.0" text="Select Tickets" textFill="#3b4754" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="30.0" />
+               </font>
+            </Label>
+            <Text fill="#3b4754" layoutX="144.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity" wrappingWidth="71.91453170776367">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="117.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upgrade to VIP, £2 extra" wrappingWidth="163.2478904724121">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="38.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total:" wrappingWidth="45.24787521362305">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="totalPrice" boundsType="VISUAL" fill="#3b4754" layoutX="87.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="£0.00" wrappingWidth="308.5812339782715">
+               <font>
+                  <Font name="Microsoft YaHei" size="48.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="280.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" wrappingWidth="71.91453170776367">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="36.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adult:" wrappingWidth="53.24787521362305">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="39.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Child:" wrappingWidth="47.91453170776367">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="30.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senior:" wrappingWidth="62.58121871948242">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="16.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="adultcombo" editable="true" layoutX="132.0" layoutY="97.0" onAction="#updateTotal" prefHeight="25.0" prefWidth="95.0" />
+            <ComboBox fx:id="childcombo" editable="true" layoutX="132.0" layoutY="155.0" onAction="#updateTotal" prefHeight="25.0" prefWidth="95.0" />
+            <ComboBox fx:id="seniorcombo" editable="true" layoutX="132.0" layoutY="209.0" onAction="#updateTotal" prefHeight="25.0" prefWidth="95.0" />
+            <Text fill="#3b4754" layoutX="280.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="£8.50" wrappingWidth="45.24787521362305">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="280.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="£5.00" wrappingWidth="45.24787521362305">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="280.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="£7.50" wrappingWidth="45.24787521362305">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="checkbox" layoutX="286.0" layoutY="250.0" mnemonicParsing="false" onAction="#updateTotal" textFill="#3b4754" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

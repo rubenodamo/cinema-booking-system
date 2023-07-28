@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="805.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FilmManagement">
+   <top>
+      <AnchorPane prefHeight="47.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#edf0f4" height="52.0" stroke="#edf0f4" strokeType="INSIDE" width="805.0" />
+            <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="6.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/Mickey%20icon.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="241.0" layoutX="52.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/ClubhouseCinemas.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="backBtn" layoutX="688.0" layoutY="8.0" mnemonicParsing="false" onAction="#goBack" prefHeight="36.0" prefWidth="69.0" style="-fx-background-color: #edf0f4;" text="Back" textFill="#29323d">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="homeBtn" layoutX="758.0" layoutY="6.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goHome" prefHeight="39.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" textFill="#29323d">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/homeicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane prefHeight="424.0" prefWidth="385.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#edf0f4" height="405.0" layoutX="-2.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="390.0" />
+            <ImageView fx:id="uploadedFilmPoster" fitHeight="209.0" fitWidth="144.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/defaultFilmPoster.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="newFilmTitle" fill="#3b4754" layoutX="167.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Film Name" wrappingWidth="217.91453170776367">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="169.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From:" wrappingWidth="44.35898971557617">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="189.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To:" wrappingWidth="27.025676727294922">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="165.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Times:" wrappingWidth="52.35898971557617">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="167.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age Rating:" wrappingWidth="90.13677597045898">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="167.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMDb Rating:" wrappingWidth="103.47008895874023">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="newFilmDescription" fill="#3b4754" layoutX="15.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Film description" wrappingWidth="347.4701042175293">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="newFilmTime1" fill="#3b4754" layoutX="220.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HH:mm" wrappingWidth="67.69230270385742">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="newFilmTime2" fill="#3b4754" layoutX="220.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HH:mm" wrappingWidth="65.69230270385742">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="newFilmTime3" fill="#3b4754" layoutX="220.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HH:mm" wrappingWidth="69.69230270385742">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="newFilmAge" fill="#3b4754" layoutX="260.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="XX" wrappingWidth="83.69224166870117">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="newFilmRating" fill="#3b4754" layoutX="275.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X/10" wrappingWidth="103.02561569213867">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Button fx:id="viewFilmsBtn" layoutX="260.0" layoutY="370.0" mnemonicParsing="false" onAction="#goToViewFilms" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: #29323D;" text="SEE ALL FILMS" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="newFilmEndDate" layoutX="219.0" layoutY="75.0" prefHeight="17.0" prefWidth="102.0" text="dd/MM/yyyy" textFill="#3b4754">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="newFilmStartDate" layoutX="219.0" layoutY="52.0" prefHeight="17.0" prefWidth="102.0" text="dd/MM/yyyy" textFill="#3b4754">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="405.0" prefWidth="423.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="7.0" layoutY="6.0" prefHeight="47.0" prefWidth="219.0" text="Add New Film" textFill="#3b4754" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="30.0" />
+               </font>
+            </Label>
+            <Text fill="#3b4754" layoutX="60.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image:" wrappingWidth="55.91453170776367">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="61.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trailer:" wrappingWidth="53.24790573120117">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="75.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title:" wrappingWidth="41.69235610961914">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="71.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" wrappingWidth="44.35898971557617">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="19.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" wrappingWidth="95.47008895874023">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="114.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From:" wrappingWidth="44.35898971557617">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="269.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To:" wrappingWidth="44.35898971557617">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="62.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Times:" wrappingWidth="52.35898971557617">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="22.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age Rating:" wrappingWidth="90.13677597045898">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="10.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMDb Rating:" wrappingWidth="103.47008895874023">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Button fx:id="uploadImageBtn" layoutX="117.0" layoutY="51.0" mnemonicParsing="false" onAction="#uploadImage" prefHeight="25.0" prefWidth="293.0" style="-fx-background-color: #29323D;" text="UPLOAD IMAGE" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="12.0" />
+               </font>
+            </Button>
+            <DatePicker fx:id="filmStartDate" layoutX="116.0" layoutY="281.0" onAction="#updateDateTimeAge" onKeyReleased="#updateFilmText" prefHeight="25.0" prefWidth="142.0" promptText="dd/MM/yyyy" />
+            <DatePicker fx:id="filmEndDate" layoutX="269.0" layoutY="281.0" onAction="#updateDateTimeAge" onKeyReleased="#updateFilmText" prefHeight="25.0" prefWidth="142.0" promptText="dd/MM/yyyy" />
+            <ComboBox fx:id="filmTime1" editable="true" layoutX="117.0" layoutY="309.0" onAction="#updateDateTimeAge" onKeyReleased="#updateFilmText" prefHeight="25.0" prefWidth="94.0" promptText="HH:mm" />
+            <ComboBox fx:id="filmTime2" editable="true" layoutX="217.0" layoutY="309.0" onAction="#updateDateTimeAge" onKeyReleased="#updateFilmText" prefHeight="25.0" prefWidth="94.0" promptText="HH:mm" />
+            <ComboBox fx:id="filmTime3" editable="true" layoutX="317.0" layoutY="309.0" onAction="#updateDateTimeAge" onKeyReleased="#updateFilmText" prefHeight="25.0" prefWidth="94.0" promptText="HH:mm" />
+            <ComboBox fx:id="filmAge" editable="true" layoutX="116.0" layoutY="338.0" onAction="#updateDateTimeAge" onKeyReleased="#updateFilmText" prefHeight="25.0" prefWidth="95.0" />
+            <Button fx:id="addFilmBtn" layoutX="291.0" layoutY="367.0" mnemonicParsing="false" onAction="#storeFilmInfo" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: #29323D;" text="ADD FILM" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="12.0" />
+               </font>
+            </Button>
+            <TextField fx:id="filmTrailer" layoutX="115.0" layoutY="85.0" onKeyPressed="#updateFilmText" onKeyReleased="#updateFilmText" prefHeight="25.0" prefWidth="297.0" promptText="Enter trailer link">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="filmTitle" layoutX="115.0" layoutY="113.0" onKeyPressed="#updateFilmText" onKeyReleased="#updateFilmText" prefHeight="25.0" prefWidth="297.0" promptText="Enter film name">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="filmRating" layoutX="115.0" layoutY="367.0" onKeyPressed="#updateFilmText" onKeyReleased="#updateFilmText" prefHeight="25.0" prefWidth="95.0" promptText="X/10">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="12.0" />
+               </font>
+            </TextField>
+            <TextArea fx:id="filmDescription" layoutX="114.0" layoutY="142.0" onKeyPressed="#updateFilmText" onKeyReleased="#updateFilmText" prefHeight="117.0" prefWidth="300.0" promptText="Enter description">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="12.0" />
+               </font>
+            </TextArea>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

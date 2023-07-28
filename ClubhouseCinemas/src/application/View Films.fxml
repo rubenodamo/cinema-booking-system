@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ViewFilms">
+   <children>
+      <AnchorPane prefHeight="37.0" prefWidth="702.0" style="-fx-background-color: white;">
+         <children>
+            <ScrollPane fx:id="scrollPane" layoutX="1.0" layoutY="32.0" prefHeight="368.0" prefWidth="703.0" style="-fx-background-color: white;">
+               <content>
+                  <AnchorPane prefHeight="368.0" prefWidth="639.0" style="-fx-background-color: white;">
+                     <children>
+                        <GridPane fx:id="grid" layoutX="2.0" prefHeight="367.0" prefWidth="683.0" style="-fx-background-color: white;" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <MenuBar prefHeight="35.0" prefWidth="703.0" style="-fx-min-width: 100%; -fx-background-color: #edf0f4;" />
+      <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/Mickey%20icon.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="200.0" layoutX="40.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/ClubhouseCinemas.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="logoutBtn" layoutX="560.0" mnemonicParsing="false" onAction="#userLogout" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: none;" text="Log Out" textFill="#29323d">
+         <font>
+            <Font name="Microsoft YaHei Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="homeBtn" layoutX="660.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goHome" prefHeight="39.0" prefWidth="43.0" style="-fx-background-color: none;" textFill="#29323d">
+         <font>
+            <Font name="Microsoft YaHei Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/homeicon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

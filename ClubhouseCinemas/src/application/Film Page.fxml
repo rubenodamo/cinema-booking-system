@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FilmPage">
+   <top>
+      <AnchorPane prefHeight="41.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#edf0f4" height="45.0" stroke="#edf0f4" strokeType="INSIDE" width="600.0" />
+            <ImageView fitHeight="41.0" fitWidth="41.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/Mickey%20icon.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="200.0" layoutX="41.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/ClubhouseCinemas.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="backBtn" layoutX="535.0" layoutY="9.0" mnemonicParsing="false" onAction="#goBack" prefHeight="27.0" prefWidth="57.0" style="-fx-background-color: #edf0f4;" text="Back" textFill="#29323d">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="355.0" prefWidth="241.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="selectedFilmPoster" fitHeight="326.0" fitWidth="222.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/defaultFilmPoster.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="355.0" prefWidth="397.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="title" fill="#3b4754" layoutX="14.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Film Name">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Text>
+            <Text fx:id="description" fill="#798da3" layoutX="15.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="328.8033332824707">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="16.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From:" wrappingWidth="42.803466796875">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="35.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To:" wrappingWidth="22.80340576171875">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="10.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Times:" wrappingWidth="54.13671875">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="203.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age Rating:" wrappingWidth="97.4700927734375">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="193.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMDb Rating:" wrappingWidth="97.4700927734375">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="endDate" fill="#3b4754" layoutX="61.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="dd/MM/yyyy" wrappingWidth="111.47015762329102">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="startDate" fill="#3b4754" layoutX="61.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="dd/MM/yyyy" wrappingWidth="111.47015762329102">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="time" fill="#3b4754" layoutX="59.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HH:mm" wrappingWidth="258.13676834106445">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="age" fill="#3b4754" layoutX="288.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="XX" wrappingWidth="57.470088958740234">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="rating" fill="#3b4754" layoutX="288.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="XX" wrappingWidth="59.470088958740234">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Button fx:id="deleteFilmBtn" layoutX="9.0" layoutY="313.0" mnemonicParsing="false" onAction="#deleteFilm" prefHeight="27.0" prefWidth="83.0" style="-fx-background-color: #29323d;" text="DELETE" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="bookBtn" layoutX="225.0" layoutY="313.0" mnemonicParsing="false" onAction="#goToBookingScene" prefHeight="27.0" prefWidth="116.0" style="-fx-background-color: #29323d;" text="BOOK NOW" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

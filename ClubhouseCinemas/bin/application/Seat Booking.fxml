@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="749.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SeatBooking">
+   <top>
+      <AnchorPane prefHeight="47.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#edf0f4" height="52.0" layoutX="-1.0" stroke="#edf0f4" strokeType="INSIDE" width="749.0" />
+            <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="8.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/Mickey%20icon.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="241.0" layoutX="54.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/ClubhouseCinemas.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="backBtn" layoutX="671.0" layoutY="7.0" mnemonicParsing="false" onAction="#goBack" prefHeight="36.0" prefWidth="69.0" style="-fx-background-color: #edf0f4;" text="Back" textFill="#29323d">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="753.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="7.0" layoutY="6.0" prefHeight="47.0" prefWidth="219.0" text="Select Seats" textFill="#3b4754" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="30.0" />
+               </font>
+            </Label>
+            <Text fill="#3b4754" layoutX="23.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie:" wrappingWidth="46.581241607666016">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="35.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A" wrappingWidth="19.24787139892578">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="35.0" layoutY="181.5" strokeType="OUTSIDE" strokeWidth="0.0" text="B" wrappingWidth="19.24787139892578">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="35.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C" wrappingWidth="19.24787139892578">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="22.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tickets:" wrappingWidth="46.581241607666016">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="23.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total:" wrappingWidth="45.2479248046875">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="23.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seats:" wrappingWidth="45.2479248046875">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="639.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available" wrappingWidth="66.58126831054688">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="639.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selected" wrappingWidth="59.247894287109375">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#3b4754" layoutX="640.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unavailable" wrappingWidth="76.58120727539062">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="14.0" />
+               </font>
+            </Text>
+            <Line endX="608.1111450195312" layoutX="120.0" layoutY="262.0" startX="-100.0" />
+            <Text fx:id="filmName" fill="#3b4754" layoutX="72.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Film Name" wrappingWidth="240.8034553527832">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="totalTickets" fill="#3b4754" layoutX="72.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="XX" wrappingWidth="240.8034553527832">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="totalPrice" fill="#3b4754" layoutX="72.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="£0.00" wrappingWidth="240.8034553527832">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="14.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#edf0f4" height="20.0" layoutX="91.0" layoutY="52.0" stroke="#edf0f4" strokeType="INSIDE" width="544.0" />
+            <Text fill="#3b4754" layoutX="331.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCREEN" wrappingWidth="65.47003936767578">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#edf0f4" height="20.0" layoutX="604.0" layoutY="293.0" stroke="#edf0f4" strokeType="INSIDE" width="29.0">
+               <effect>
+                  <DropShadow radius="7.5" width="11.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#23b33b" height="20.0" layoutX="605.0" layoutY="323.0" stroke="#edf0f4" strokeType="INSIDE" strokeWidth="0.0" width="29.0">
+               <effect>
+                  <DropShadow radius="7.5" width="11.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e40606" height="20.0" layoutX="605.0" layoutY="352.0" stroke="#ef0606" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="29.0">
+               <effect>
+                  <DropShadow radius="7.5" width="11.0" />
+               </effect>
+            </Rectangle>
+            <Button fx:id="A1" layoutX="82.0" layoutY="111.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="1" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="B1" layoutX="82.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="1" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="C1" layoutX="82.0" layoutY="205.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="1" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="A2" layoutX="159.0" layoutY="111.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="2" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="B2" layoutX="159.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="2" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="C2" layoutX="159.0" layoutY="205.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="2" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="A3" layoutX="236.0" layoutY="111.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="3" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="B3" layoutX="236.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="3" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="C3" layoutX="236.0" layoutY="205.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="3" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="A4" layoutX="313.0" layoutY="111.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="4" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="B4" layoutX="313.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="4" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="C4" layoutX="313.0" layoutY="205.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="4" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="A5" layoutX="390.0" layoutY="111.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="5" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="B5" layoutX="390.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="5" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="C5" layoutX="390.0" layoutY="205.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="5" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="A6" layoutX="467.0" layoutY="111.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="6" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="B6" layoutX="467.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="6" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="C6" layoutX="467.0" layoutY="205.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="6" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="A7" layoutX="544.0" layoutY="111.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="7" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="B7" layoutX="544.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="7" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="C7" layoutX="544.0" layoutY="205.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="7" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="A8" layoutX="621.0" layoutY="111.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="8" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="B8" layoutX="621.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="8" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="C8" layoutX="621.0" layoutY="205.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #edf0f4;" text="8" textFill="#3b4754">
+               <effect>
+                  <DropShadow height="11.0" radius="5.0" width="11.0" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="confirmationBtn" layoutX="299.0" layoutY="357.0" mnemonicParsing="false" onAction="#goToConfirmation" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: #29323D;" text="CONFIRM" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="selectedSeats" layoutX="72.0" layoutY="361.0" maxHeight="-Infinity" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="221.0" style="-fx-background-color: #FFBD39;" text="XX" textFill="#3b4754" wrapText="true">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
