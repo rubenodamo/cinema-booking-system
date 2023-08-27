@@ -49,11 +49,11 @@ To run the Cinema Booking System locally, follow these steps:
 - Integration with external APIs to fetch real-time movie data.
 
 ---
-
-*Note: This is a fictional project description created for illustrative purposes.*
 <p align="center">
-  <img src="https://github.com/rubenodamo/cinema-booking-system/assets/93412774/ace65e41-3fb2-447f-b010-2f412e03c68d">
-  <img src="https://github.com/rubenodamo/cinema-booking-system/assets/93412774/b13569f0-956a-47ef-a564-ffcd83111e07">
-  
+  <figure>
+    <img src="https://github.com/rubenodamo/cinema-booking-system/assets/93412774/b13569f0-956a-47ef-a564-ffcd83111e07">
+    <figcaption>Example Movie Page</figcaption>
+  </figure>
 </p>
+> ***Note**: This is a fictional project description created for illustrative purposes.*
 
