@@ -47,3 +47,7 @@ To run the Cinema Booking System locally, follow these steps:
 - Use a more secure database format such as SQL.
 - Seat-view representation of the bookings made. 
 - Integration with external APIs to fetch real-time movie data.
+
+---
+
+*Note: This is a fictional project description created for illustrative purposes.*
