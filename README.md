@@ -43,9 +43,9 @@ To run the Cinema Booking System locally, follow these steps:
 
 - Integration with online payment gateways for ticket purchases.
 - Improved error handling and validation.
-- Advanced search and filtering options in the movie catalog.
+- Advanced search and filtering options in the movie catalogue.
 - Use a more secure database format such as SQL.
-- Seat-view representation of the bookings made. 
+- Seat-view representation of the bookings made in the admin view. 
 - Integration with external APIs to fetch real-time movie data.
 
 ---
