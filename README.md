@@ -56,5 +56,5 @@ To run the Cinema Booking System locally, follow these steps:
   </figure>
 </p>
 
->***Note**: This is a fictional project description created for illustrative purposes.*
+>***Note**: This is a fictional project created for illustrative purposes. Project was used to demonstate Java and JavaFX capabilities.*
 
