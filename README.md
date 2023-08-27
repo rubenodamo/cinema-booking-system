@@ -55,5 +55,6 @@ To run the Cinema Booking System locally, follow these steps:
     <figcaption>Example Movie Page</figcaption>
   </figure>
 </p>
+
 >***Note**: This is a fictional project description created for illustrative purposes.*
 
