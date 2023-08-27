@@ -26,7 +26,7 @@ The Cinema Booking System is designed to provide an intuitive and user-friendly 
 ## Testing
 A mimicked form of user acceptance testing (UAT) was conducted to validate the application from an end-user perspective. This involved running the application against the success criteria and ensuring all parts were met.
 
-For a visual demonstration of the testing process, you can watch the ![Testing Overview Video](https://www.youtube.com/watch?v=QvE5bNIo3k0) on YouTube.
+For a visual demonstration of the testing process, you can watch the [Testing Overview Video](https://www.youtube.com/watch?v=QvE5bNIo3k0) on YouTube.
 
 ## Setup and Installation
 
